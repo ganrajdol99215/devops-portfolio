@@ -1,0 +1,12 @@
+{
+  "name": "devops-cicd-demo",
+  "version": "1.0.0",
+  "description": "Node.js app with CI/CD pipeline deployed on Render",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
