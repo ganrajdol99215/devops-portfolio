@@ -6,7 +6,7 @@ The main website (`index.html` + `style.css`) showcases:
 - Custom domain configuration (`CNAME`).
 
 You can visit the live site at:
->[https://your-custom-domain.com](https://www.devopsbyganraj.cloud/)
+> [https://your-custom-domain.com](https://www.devopsbyganraj.cloud/)
 ## 🛠️ Node.js CI/CD Project
 
 Inside the `devops-cicd-node` folder is a sample Node.js application:
