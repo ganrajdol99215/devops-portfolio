@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send(`
+  res.send(`
   <html>
     <head>
       <title>Ganraj – DevOps Live Demo</title>
@@ -55,7 +55,9 @@ app.get('/', (req, res) => {
       <footer>🔁 This project redeploys automatically on every commit. CI/CD in action!</footer>
     </body>
   </html>
-`);
+  `);
+});
+
 app.listen(port, () => {
-    console.log(`App listening at http://localhost:${port}`);
+  console.log(`App listening at http://localhost:${port}`);
 });
