@@ -6,7 +6,7 @@ The main website (`index.html` + `style.css`) showcases:
 - Custom domain configuration (`CNAME`).
 
 You can visit the live site at:
-> [https://your-custom-domain.com](https://your-custom-domain.com)
+> devopsbyganraj.cloud
 
 ## 🛠️ Node.js CI/CD Project
 
