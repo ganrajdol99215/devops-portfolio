@@ -49,7 +49,6 @@ app.get('/', (req, res) => {
         <div class="skill">Terraform</div>
         <div class="skill">Linux</div>
         <div class="skill">Kubernetes</div>
-        <div class="skill">Monitoring & Logging</div>
       </div>
 
       <footer>🔁 This project redeploys automatically on every commit. CI/CD in action!</footer>
