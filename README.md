@@ -31,18 +31,19 @@ Inside the `devops-cicd-node` folder, you'll find a **sample Node.js application
 
 ## 🔄 Workflow Diagram (Textual)
 
- Developer (You)
-     |
-     | Push to GitHub
-     ▼
-GitHub Repo (main branch)
-     |
-     | Auto Webhook
-     ▼
-Render (CI/CD)
-     ├── Install dependencies
-     ├── Build app (npm run build / static deploy)
-     └── Deploy to live site (https://your-domain.com)
+ Developer 
+     │
+     └─▶ Push to GitHub
+           │
+           └─▶ GitHub Repo (main branch)
+                    │
+                    └─▶ Auto Webhook Trigger
+                             │
+                             └─▶ Render (CI/CD)
+                                      ├─ Install dependencies
+                                      ├─ Build app (npm run build / static deploy)
+                                      └─ Deploy to live site (https://your-domain.com)
+
 
 "I hosted my portfolio on Render using its automatic CI/CD integration with GitHub. Each push to the main branch triggers a build, dependency install, and deploys the latest version. I follow semantic commits, use static linting (eslint), and keep the build lean with optimized assets. The result is an automated, scalable workflow without manual deployment."
 
