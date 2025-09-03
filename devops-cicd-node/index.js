@@ -49,8 +49,9 @@ app.get("/", (req, res) => {
 
       <div class="section">
         <h2>📊 Deployment Info</h2>
-        <p><b>Last Deployed:</b> ${new Date().toLocaleString()}</p>
-        <p><b>Environment:</b> ${process.env.NODE_ENV || "development"}</p>
+        <p><b>Last Deployed (UTC):</b> ${new Date().toLocaleString("en-US", { timeZone: "UTC" })}</p>
+          <p><b>Last Deployed (Mumbai):</b> ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}</p>
+           <p><b>Environment:</b> ${process.env.NODE_ENV || "development"}</p>
         <p><b>Build Version:</b> 1.0.${process.env.BUILD_NUMBER || "local"}</p>
       </div>
 
