@@ -1,12 +1,31 @@
 {
   "name": "devops-cicd-demo",
   "version": "1.0.0",
-  "description": "Node.js app with CI/CD pipeline deployed on Render",
+  "description": "Node.js CI/CD demo service with Express, deployed on Render using GitHub Actions.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "keywords": [
+    "devops",
+    "cicd",
+    "nodejs",
+    "express",
+    "render",
+    "github-actions",
+    "demo"
+  ],
+  "author": "Ganraj Dol",
+  "license": "MIT"
 }
+
