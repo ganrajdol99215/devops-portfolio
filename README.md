@@ -10,7 +10,7 @@ The main website (`index.html` + `style.css`) showcases:
 [ https://www.devopsbyganraj.cloud](https://www.devopsbyganraj.cloud)
 
 ---
-# CI/CD Pipeline – Render + GitHub (Used in Your Portfolio Project)
+# CI/CD Pipeline – Render + GitHub 
 ##  Overview:
 
 This portfolio project is deployed on Render, with continuous deployment (CD) connected to a GitHub repository. Whenever code is pushed to main, the site auto-builds and deploys via Render’s built-in CI/CD integration.
