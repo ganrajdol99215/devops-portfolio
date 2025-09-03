@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
       </style>
     </head>
     <body>
-      <h1>🚀 I'm Ganraj – DevOps Engineer</h1>
+      <h1>🚀 I'm Ganraj Dol – DevOps Engineer</h1>
       <p>This is a live Node.js app deployed with CI/CD using GitHub Actions + Render.</p>
 
       <h2>💼 My DevOps Skills:</h2>
