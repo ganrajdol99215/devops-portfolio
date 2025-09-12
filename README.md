@@ -2,8 +2,7 @@
 
 The main website (`index.html` + `style.css`) showcases:
 
- **My DevOps skills and experience**  
- A **workflow diagram** (`placeholder.png`)  
+ **My DevOps skills and experience**    
  **Custom domain configuration** via `CNAME`
 
  **Visit the live site:**  
