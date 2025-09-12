@@ -82,4 +82,14 @@ ul {
 }
 
 a {
-  color:
+  color: #007bff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #222;
+  color: #fff;
+  border-top: 3px solid #007bff;
+}
