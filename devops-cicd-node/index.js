@@ -31,8 +31,8 @@ app.get("/", (req, res) => {
         <div class="section">
           <h2>🔁 CI/CD Pipeline Flow</h2>
           <div class="pipeline-step">✅ Code pushed to GitHub</div>
-          <div class="pipeline-step">⚙️ Render pull the repository of GitHub </div>
-          <div class="pipeline-step">🚀 build triggered-Auto-deployed on Render</div>
+          <div class="pipeline-step">⚙️ GitHub Actions build triggered </div>
+          <div class="pipeline-step">🚀 Auto-deployed on Render</div>
         </div>
 
         <footer>
