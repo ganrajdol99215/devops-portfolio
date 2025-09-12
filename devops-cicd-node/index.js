@@ -36,11 +36,6 @@ app.get("/", (req, res) => {
           font-size: 0.9rem;
           color: gray;
         }
-        .icons img {
-          margin: 0.5rem;
-          width: 50px;
-          vertical-align: middle;
-        }
       </style>
     </head>
     <body>
@@ -50,8 +45,8 @@ app.get("/", (req, res) => {
       <div class="section">
         <h2>📊 Deployment Info</h2>
         <p><b>Last Deployed (UTC):</b> ${new Date().toLocaleString("en-US", { timeZone: "UTC" })}</p>
-          <p><b>Last Deployed (Mumbai):</b> ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}</p>
-           <p><b>Environment:</b> ${process.env.NODE_ENV || "development"}</p>
+        <p><b>Last Deployed (Mumbai):</b> ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}</p>
+        <p><b>Environment:</b> ${process.env.NODE_ENV || "development"}</p>
         <p><b>Build Version:</b> 1.0.${process.env.BUILD_NUMBER || "local"}</p>
       </div>
 
@@ -59,19 +54,7 @@ app.get("/", (req, res) => {
         <h2>🔁 CI/CD Pipeline Flow</h2>
         <div class="pipeline-step">✅ Code pushed to GitHub</div>
         <div class="pipeline-step">⚙️ GitHub Actions build triggered</div>
-        <div class="pipeline-step">📦 Docker image built & tested</div>
         <div class="pipeline-step">🚀 Auto-deployed on Render</div>
-      </div>
-
-      <div class="section">
-        <h2>🛠️ DevOps Tools</h2>
-        <div class="icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </div>
       </div>
 
       <footer>
