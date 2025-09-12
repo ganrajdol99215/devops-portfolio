@@ -2,6 +2,14 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Function to format uptime in HH:MM:SS
+function formatUptime(seconds) {
+  const hrs = Math.floor(seconds / 3600);
+  const mins = Math.floor((seconds % 3600) / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${hrs}h ${mins}m ${secs}s`;
+}
+
 // Main Dashboard
 app.get("/", (req, res) => {
   res.send(`
@@ -31,7 +39,7 @@ app.get("/", (req, res) => {
         <div class="section">
           <h2>🔁 CI/CD Pipeline Flow</h2>
           <div class="pipeline-step">✅ Code pushed to GitHub</div>
-          <div class="pipeline-step">⚙️ GitHub Actions build triggered </div>
+          <div class="pipeline-step">⚙️ GitHub Actions build triggered</div>
           <div class="pipeline-step">🚀 Auto-deployed on Render</div>
         </div>
 
@@ -47,9 +55,14 @@ app.get("/", (req, res) => {
   `);
 });
 
-// Health Endpoint
+// Health Endpoint with formatted uptime
 app.get("/health", (req, res) => {
-  res.json({ status: "ok", uptime: process.uptime() });
+  const uptimeSeconds = process.uptime();
+  res.json({
+    status: "ok",
+    uptime_seconds: uptimeSeconds,
+    uptime: formatUptime(uptimeSeconds)
+  });
 });
 
 // Metrics Endpoint
