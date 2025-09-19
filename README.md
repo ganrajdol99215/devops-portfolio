@@ -24,7 +24,7 @@ Inside the `devops-cicd-node` folder, you'll find a **sample Node.js application
 ###  Features Demonstrated
 
  **Continuous Integration (CI):**
-- Automated testing and build pipelines via **GitHub Actions**
+- Automated testing and build pipelines via **GitHub**
 
  **Continuous Deployment (CD):**
 - Automatic deployments to cloud platforms (**Render**)
