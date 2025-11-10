@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
       </head>
       <body>
         <h1>🚀 CI/CD Live Demo Dashboard</h1>
-        <p>This Node.js service is deployed on <b>Render</b> with GitHub Actions CI/CD.</p>
+        <p>This Node.js service is deployed on <b>Render</b> with GitHub CD.</p>
 
         <div class="section">
           <h2>📊 Deployment Info</h2>
