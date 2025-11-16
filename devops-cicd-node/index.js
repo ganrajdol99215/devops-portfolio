@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
         </style>
       </head>
       <body>
-        <h1>🚀 CI/CD Live Demo Dashboard</h1>
+        <h1>🚀 CD Live Demo Dashboard</h1>
         <p>This Node.js service is deployed on <b>Render</b> with GitHub CD.</p>
 
         <div class="section">
@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
         </div>
 
         <div class="section">
-          <h2>🔁 CI/CD Pipeline Flow</h2>
+          <h2>🔁 CD Pipeline Flow</h2>
           <div class="pipeline-step">✅ Code pushed to GitHub</div>
           <div class="pipeline-step">⚙️ Render pulled latest commit form GitHub </div>
           <div class="pipeline-step">🚀 build triggered-Auto-deployed on Render</div>
